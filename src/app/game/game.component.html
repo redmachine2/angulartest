@@ -1,0 +1,13 @@
+<div className="game">
+	<div class="game-board">
+		<Board [squares]="current.squares" (squaresChange)="update($event)"></Board>
+	</div>
+	<div class="game-info">
+		<div>{{status}}</div>
+		<ol>
+			<li *ngFor="let move of moves">
+				<a href="#" (click)="jumpTo(move.move)">{{move.desc}}</a>
+			</li>
+		</ol>
+	</div>
+</div>

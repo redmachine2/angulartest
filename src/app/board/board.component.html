@@ -1,0 +1,17 @@
+<div>
+	<div class="board-row">
+		<Square [value]="squares[0]" (handleClick)="squaresChange.emit(0)"></Square>
+		<Square [value]="squares[1]" (handleClick)="squaresChange.emit(1)"></Square>
+		<Square [value]="squares[2]" (handleClick)="squaresChange.emit(2)"></Square>
+	</div>
+	<div class="board-row">
+		<Square [value]="squares[3]" (handleClick)="squaresChange.emit(3)"></Square>
+		<Square [value]="squares[4]" (handleClick)="squaresChange.emit(4)"></Square>
+		<Square [value]="squares[5]" (handleClick)="squaresChange.emit(5)"></Square>
+	</div>
+	<div class="board-row">
+		<Square [value]="squares[6]" (handleClick)="squaresChange.emit(6)"></Square>
+		<Square [value]="squares[7]" (handleClick)="squaresChange.emit(7)"></Square>
+		<Square [value]="squares[8]" (handleClick)="squaresChange.emit(8)"></Square>
+	</div>
+</div>
